@@ -1,0 +1,17 @@
+[
+    {
+        "numero_empleado": "1001",
+        "nombre": "Ana López Ramírez",
+        "especialidad": "Desarrollo de Software"
+    },
+    {
+        "numero_empleado": "1002",
+        "nombre": "Carlos Pérez Díaz",
+        "especialidad": "Redes"
+    },
+    {
+        "numero_empleado": "1003",
+        "nombre": "María Torres Gómez",
+        "especialidad": "Base de Datos"
+    }
+]
