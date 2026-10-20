@@ -63,7 +63,14 @@ class RegistroDocentes:
         with open(ruta, "w", encoding="utf-8") as f:
             json.dump([d.a_diccionario() for d in self.docentes], f,
                       ensure_ascii=False, indent=4)
-
+    def exportar_yaml(self, ruta):
+        with open(ruta, "w", encoding="utf-8") as f:
+            f.write("docentes:\n")
+            for d in self.docentes:
+                f.write(f"  - numero_empleado: {json.dumps(d.numero_empleado, ensure_ascii=False)}\n")
+                f.write(f"    nombre: {json.dumps(d.nombre, ensure_ascii=False)}\n")
+                f.write(f"    especialidad: {json.dumps(d.especialidad, ensure_ascii=False)}\n")
+                
     def como_tabla(self):
         lineas = [f"{'No. Empleado':<15}{'Nombre':<30}{'Especialidad':<25}", "-" * 70]
         for d in self.docentes:
