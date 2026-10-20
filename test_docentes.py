@@ -53,5 +53,3 @@ class TestDocentes(unittest.TestCase):
         self.assertTrue(os.path.exists("prueba.yaml"))
         os.remove("prueba.yaml")
 
-
-if __name__ ==
