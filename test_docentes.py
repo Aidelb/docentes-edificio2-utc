@@ -48,7 +48,10 @@ class TestDocentes(unittest.TestCase):
         self.assertTrue(os.path.exists("prueba.json"))
         os.remove("prueba.json")
 
+    def test_11_exportar_yaml(self):
+        self.reg.exportar_yaml("prueba.yaml")
+        self.assertTrue(os.path.exists("prueba.yaml"))
+        os.remove("prueba.yaml")
 
-if __name__ == "__main__":
-    unittest.main()
-    
+
+if __name__ ==
